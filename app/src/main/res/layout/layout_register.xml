@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="欢迎注册"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_20" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint="请输入手机号"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16" />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:textSize="@dimen/content_button_text_size_16" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="获取验证码"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/content_text_size_14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/white"
+        android:hint="请设置登录密码"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16" />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin" />
+
+    <EditText
+        android:id="@+id/reply_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/white"
+        android:hint="请确认密码"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16" />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/next"
+        style="@style/btn_match_parent_radius"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_margin="@dimen/left_right_margin"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bottom_button_text_size_18" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin">
+
+        <Button
+            android:id="@+id/edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="忘记密码"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_text_size_14" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:text="立即登录"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_text_size_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView
+        android:id="@+id/user_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:gravity="center"
+        android:textColor="@color/gray" />
+</LinearLayout>

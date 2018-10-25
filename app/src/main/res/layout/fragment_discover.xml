@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEEF4"
+    tools:context=".ui.fragment.DiscoverFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_qzdt"
+            app:sLeftTextString="圈子动态" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_jcsk"
+            app:sLeftTextString="精彩时刻" />
+
+        <com.allen.library.SuperTextView
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_fjdr"
+            app:sLeftTextString="附近的人" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_gzds"
+            app:sLeftTextString="关注的事" />
+
+        <com.allen.library.SuperTextView
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_ydqz"
+            app:sLeftTextString="异地求助" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_zyfw"
+            app:sLeftTextString="专业服务" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_jtcx"
+            app:sLeftTextString="交通出行" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_bdsh"
+            app:sLeftTextString="本地生活" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/super_textview_height"
+            app:sLeftIconRes="@drawable/icon_fx_xdqg"
+            app:sLeftTextString="心的牵挂" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

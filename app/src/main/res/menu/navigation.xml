@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_message"
+        android:icon="@drawable/nav_xiaoxi"
+        android:title="@string/message" />
+
+    <item
+        android:id="@+id/menu_item_circle"
+        android:icon="@drawable/nav_quanzi"
+        android:title="@string/circle" />
+
+    <item
+        android:id="@+id/menu_item_discover"
+        android:icon="@drawable/nav_faxian"
+        android:title="@string/discover" />
+
+    <item
+        android:id="@+id/menu_item_mine"
+        android:icon="@drawable/nav_wode"
+        android:title="@string/mine" />
+
+</menu>
